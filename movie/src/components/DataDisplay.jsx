@@ -13,7 +13,7 @@ const DataDisplay = () => {
   const searchMovies = async (query) => {
     setLoading(true);
     try {
-      const response = await axios.get("http://www.omdbapi.com/", {
+      const response = await axios.get("https://www.omdbapi.com/", {
         params: {
           s: query,
           apikey: import.meta.env.VITE_API_KEY,
@@ -32,7 +32,7 @@ const DataDisplay = () => {
   const getMovieDetails = async (title) => {
     setLoading(true);
     try {
-      const response = await axios.get("http://www.omdbapi.com/", {
+      const response = await axios.get("https://www.omdbapi.com/", {
         params: {
           t: title,
           plot: "full",
@@ -52,7 +52,7 @@ const DataDisplay = () => {
   const getMovieById = async (imdbID) => {
     setLoading(true);
     try {
-      const response = await axios.get("http://www.omdbapi.com/", {
+      const response = await axios.get("https://www.omdbapi.com/", {
         params: {
           i: imdbID,
           apikey: import.meta.env.VITE_API_KEY,
@@ -71,7 +71,7 @@ const DataDisplay = () => {
   const searchByRating = async (query, rating) => {
     setLoading(true);
     try {
-      const response = await axios.get("http://www.omdbapi.com/", {
+      const response = await axios.get("https://www.omdbapi.com/", {
         params: {
           s: query,
           apikey: import.meta.env.VITE_API_KEY,
@@ -93,7 +93,7 @@ const DataDisplay = () => {
   const getTopMoviesByLanguage = async (lang) => {
     setLoading(true);
     try {
-      const response = await axios.get("http://www.omdbapi.com/", {
+      const response = await axios.get("https://www.omdbapi.com/", {
         params: {
           s: lang,
           apikey: import.meta.env.VITE_API_KEY,

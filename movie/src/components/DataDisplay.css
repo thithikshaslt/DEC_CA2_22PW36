@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
+    color: black;
   }
   
   .search-form, .language-form {
@@ -48,6 +49,7 @@
   
   .movie-list {
     margin: 20px 0;
+    color:black
   }
   
   .movie-list ul {
@@ -72,6 +74,7 @@
     background-color: #fafafa;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: black;
   }
   
   .ratings {
